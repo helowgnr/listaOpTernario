@@ -8,9 +8,15 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
+    const valor = Number(prompt(`Qual o valor do produto?`).trim().replace(".",","));
+    const vinte = (valor * 1.20);
+    const quinze = (valor + 15 / (100 * valor));
+    const dez = (valor + 10 / (100 * valor));
+    const cinco = (valor +  / (100 * valor));
 
 
     //Processamento
+    (valor >= 280) ? alert (`O preço com aumento de 20% é de: R$${vinte}.`) : 
 
     
     //Saída
