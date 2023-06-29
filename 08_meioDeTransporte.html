@@ -14,7 +14,8 @@
 
 
     //Processamento
-    ((precoLitro * litrosGastos) > (onibus * 2)) ? alert(`Tá compensando ir de busão. Por dia você gasta R$${(onibus * 2).toFixed(2)}.`) : alert(`Compensa ir de carro. Você gasta R$${(precoLitro * litrosGastos).toFixed(2)} por dia.`);
+    ((precoLitro * litrosGastos) > (onibus * 2)) ? alert(`Tá compensando ir de busão. Por dia você gasta R$${(onibus * 2).toFixed(2).replace(".", ",")}.`) :
+        alert(`Compensa ir de carro. Você gasta R$${(precoLitro * litrosGastos).toFixed(2).replace(".", ",")} por dia.`);
 
 
 
