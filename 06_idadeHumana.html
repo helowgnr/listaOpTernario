@@ -8,11 +8,27 @@
     // - cães grandes: fator 7.
 
     //Entrada
+    const porte = prompt(`Qual o porte do seu cão? (Resposta com P, M ou G)`).trim().toUpperCase();
+    if (porte == "P" || porte == "M" || porte == "G") {
+        const idadeCao = parseInt(prompt(`Qual a idade do seu cão?`).trim());
+        if (!isNaN(idadeCao)) {
+            //Processamento
+            (porte == "P") ? alert(`A "idade humana" do seu cachorro é ${idadeCao * 5}.`) :
+                (porte == "M") ? alert(`A "idade humana" do seu cachorro é ${idadeCao * 6}.`) :
+                    alert(`A "idade humana" do seu cachorro é ${idadeCao * 7}.`);
+        }
+        else {
+            alert(`Informe apenas números para a idade do cão!`);
+        }
+
+    }
+    else {
+        alert(`Resposta inválida. Responda com P, M ou G.`)
+    }
 
 
-    //Processamento
 
-    
+
     //Saída
 
 </script>
