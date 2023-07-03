@@ -8,11 +8,19 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
+    const horas = parseInt(prompt(`Quantas horas você trabalha por semana?`).trim());
+    const valorPorHora = Number(prompt(`Quanto você recebe por hora?`).trim().replace(",", "."));
+
 
 
     //Processamento
+    (horas <= 45) ? alert(`Você recebe R$${(horas * valorPorHora).toFixed(2)} por semana.`) :
+        (horas <= 60) ? alert(`Você recebe R$${(horas * (valorPorHora * 0.2)).toFixed(2)} por semana.`) :
+            (horas > 60) ? alert(`Você recebe R$${(horas * (valorPorHora * 0.3)).toFixed(2)} por semana.`) :
+                alert(`Resposta inválida. Responda apenas com números.`)
 
-    
+
+
     //Saída
 
 </script>
