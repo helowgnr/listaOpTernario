@@ -1,4 +1,3 @@
-<meta charset="UTF-8">
 <script>
     //Problema: Aumento de Preço
     //Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
@@ -7,22 +6,9 @@
     //- até 1500(inclusive): aumento de 10 %
     //- acima de 1500: aumento de 5 %
 
-    //Entrada
-    const valor = Number(prompt(`Qual o valor do produto?`).trim().replace(",", "."));
-
-
-    //Processamento
-    (valor <= 280) ? alert(`O aumento de 20% é de: R$${(valor * 0.20).toFixed(2).replace(".", ",")}.`) :
-        (valor <= 700) ? alert(`O aumento de 15% é de: R$${(valor * 0.15).toFixed(2).replace(".", ",")}.`) :
-            (valor <= 1500) ? alert(`O aumento de 10% é de: R$${(valor * 0.10).toFixed(2).replace(".", ",")}.`) :
-                alert(`O aumento de 5% é de $${(valor * 0.05).toFixed(2).replace(".", ",")}.`)
-
-
-
-
-
-
-
-    //Saída
-
+    const preco = Number(prompt(`Qual o valor do produto?`).trim().replace(".", ","));
+    (preco <= 280) ? alert(`O valor é ${(preco * 1.20).toFixed(2).replace(".", ",")}`) :
+        (preco <= 700) ? alert(` O VALOR É${(preco * 1.15).toFixed(2).replace(".", ",")}`) :
+            (preco <= 1500) ? alert(`O VALOR É ${(preco * 1.10).toFixed(2).replace(".", ",")}`) :
+                alert(`O VALOR PE${(preco * 1.5).toFixed(2).replace(".", ",")}`);
 </script>

@@ -1,0 +1,65 @@
+<meta charset="UTF-8">
+<script>
+    //Problema: Maioridade
+    //Leia a idade de uma pessoa e informe se ela já chegou à maioridade.
+    //Se ela ainda não chegou, informe quantos anos faltam para a maioridade.
+    const idade = Number(prompt(`Quantos anos você tem?`).trim());
+    (idade >= 18) ? alert(`Maior de idade`) : alert(`Menor de idade. Faltam ${(18 - idade)} anos para a maioridade`);
+
+
+</script>
+/*
+<meta charset="UTF-8">
+<script>
+    //Problema: Eleitor
+    //Considerando que no Brasil é possível votar a partir dos 16 anos de idade,
+    //leia o ano de nascimento de uma pessoa e informe se ela poderá votar no ano atual.
+    //Ignore mês e dia de nascimento.
+    const anoNascimento = Number(prompt(`Qual seu ano de nascimento?`).trim());
+    const verifica = (2023 - anoNascimento);
+        (verifica >= 16) ? alert(`Você está apto a votar.`) : alert(`Você não está apto a votar`);
+/*
+<meta charset="UTF-8">
+<script>
+    //Problema: Vogal
+    //Construa um programa que leia um caractere e informe se este caractere é uma vogal.
+
+    //Entrada
+    const letra = prompt(`Insira uma letra:`).trim().toUpperCase();
+
+
+    //Processamento
+    (letra == "A" || letra == "E" || letra == "I" || letra == "O" || letra == "U") ? alert(`"${letra}" é uma vogal.`) : alert(`"${letra}" não é uma vogal.`);
+
+
+    //Saída
+
+</script>()
+<meta charset="UTF-8">
+<script>
+    //Problema: Aumento de Preço
+    //Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
+    //- até 280(inclusive): aumento de 20 %
+    //- até 700(inclusive): aumento de 15 %
+    //- até 1500(inclusive): aumento de 10 %
+    //- acima de 1500: aumento de 5 %
+
+    //Entrada
+    const valor = Number(prompt(`Qual o valor do produto?`).trim().replace(",", "."));
+
+
+    //Processamento
+    (valor <= 280) ? alert(`O aumento de 20% é de: R$${(valor * 0.20).toFixed(2).replace(".", ",")}.`) :
+        (valor <= 700) ? alert(`O aumento de 15% é de: R$${(valor * 0.15).toFixed(2).replace(".", ",")}.`) :
+            (valor <= 1500) ? alert(`O aumento de 10% é de: R$${(valor * 0.10).toFixed(2).replace(".", ",")}.`) :
+                alert(`O aumento de 5% é de $${(valor * 0.05).toFixed(2).replace(".", ",")}.`)
+
+
+
+
+
+
+ 
+    //Saída
+
+</script>
